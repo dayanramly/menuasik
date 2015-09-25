@@ -12,14 +12,16 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password', 60);
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        Schema::create('user', function (Blueprint $table) {
+           $table->engine = "InnoDB";
+           $table->increments('id');
+           $table->string('uname', 50)->unique();
+           $table->string('name',100);
+           $table->string('password', 60);
+           $table->integer('group_id');
+           $table->rememberToken();
+           $table->timestamps();
+       });
     }
 
     /**
@@ -29,6 +31,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('user');
     }
 }
