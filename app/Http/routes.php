@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('page.home');
+});
+Route::get('/login', function () {
+    return view('page.login');
 });
