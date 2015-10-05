@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use Auth;
 use App\User;
-use Validator;
+use Request;
+
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller
 {
@@ -21,7 +21,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    // use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
      * Create a new authentication controller instance.
@@ -39,27 +39,24 @@ class AuthController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
-        ]);
+
+    public function getLogin(){
+        return view('page.login');
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
-    protected function create(array $data)
+    public function postLogin(Requests\LoginRequest $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        $credentials = $request->only('uname', 'password');
+
+        if (Auth::attempt($credentials, $request->has('remember'))) {
+            return redirect()->intended('/');
+        }
+        return redirect('/login');
+    }
+
+    public function getLogout()
+    {
+        Auth::logout();
+        return redirect('/login');
     }
 }

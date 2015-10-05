@@ -11,9 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('page.home');
+// Route::get('/', function () {
+//     return view('page.home');
+// });
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/', 'HomeController@index');
+    Route::get('/admin/list', 'AdminController@listAdmin');
 });
-Route::get('/login', function () {
-    return view('page.login');
-});
+
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', 'Auth\AuthController@postLogin');
+Route::get('logout', 'Auth\AuthController@getLogout');
