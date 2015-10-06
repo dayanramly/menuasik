@@ -58,8 +58,8 @@ class UserTableSeeder extends Seeder
         // DB::table('tempatmakan')->insert([
         //     'nama'          => 'Flamboyan',
         //     'deskripsi'     => 'Nasi Goreng terenak di Purbalingga',
-        //     'keunggulan'    => '["Nasi goreng enak","Tempat makan murah"]',
-        //     'menu'          => '{"makanan":{"nama":"Nasi Goreng","harga":"10000"},"minuman":{"nama":"es jeruk","harga":"4000"}}',
+        //     'keunggulan'    => $keunggulan,
+        //     'menu'          => $menu,
         //     'foto'          => '/img/flamboyan.jpg',
         //     'alamat'        => 'Jalan Jend. Sudirman No.13',
         //     'user_id'       => $userTwo->id
@@ -74,6 +74,6 @@ class UserTableSeeder extends Seeder
         //     'user_id'       => $userTwo->id
         //     ));
 
-        // $this->command->info('Tempat makan seeding complete');
+        $this->command->info('Tempat makan seeding complete');
     }
 }

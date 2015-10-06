@@ -17,6 +17,8 @@
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/', 'HomeController@index');
     Route::get('/admin/list', 'AdminController@listAdmin');
+
+    Route::get('/tempatmakan/list', 'FoodController@listMenu');
 });
 
 Route::get('login', 'Auth\AuthController@getLogin');
