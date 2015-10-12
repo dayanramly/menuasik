@@ -19,6 +19,11 @@ class FoodController extends Controller
         $data['tempatmakan']=Tempatmakan::all();
         return view('page.tempatmakan.listTempat', $data);
     }
+
+    public function tambahData()
+    {
+        return view('page.tempatmakan.tambahTempat');
+    }
        // $keunggulan = json_encode(array("Nasi goreng enak","Tempat makan murah"));
        // print_r($keunggulan);
        // echo "<br /><br />";

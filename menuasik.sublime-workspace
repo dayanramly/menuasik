@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"json",
+				"json_encode"
+			],
+			[
 				"user",
 				"userOne"
 			],
@@ -46,10 +50,6 @@
 			[
 				"prog",
 				"progli"
-			],
-			[
-				"json",
-				"json_decode"
 			],
 			[
 				"Aut",
@@ -183,7 +183,7 @@
 			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 791,
+				"buffer_size": 929,
 				"line_ending": "Windows"
 			}
 		},
@@ -191,8 +191,16 @@
 			"file": "resources/views/includes/header.blade.php",
 			"settings":
 			{
-				"buffer_size": 2391,
+				"buffer_size": 1589,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/FoodController.php",
+			"settings":
+			{
+				"buffer_size": 2442,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -204,10 +212,18 @@
 			}
 		},
 		{
-			"file": "resources/views/page/admin/listAdmin.blade.php",
+			"file": "resources/views/page/tempatmakan/listTempat.blade.php",
 			"settings":
 			{
-				"buffer_size": 646,
+				"buffer_size": 1540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/page/tempatmakan/tambahTempat.blade.php",
+			"settings":
+			{
+				"buffer_size": 3254,
 				"line_ending": "Windows"
 			}
 		}
@@ -256,6 +272,13 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/menuasik/resources/views/includes/head.blade.php",
+		"/C/xampp/htdocs/menuasik/resources/views/page/admin/listAdmin.blade.php",
+		"/C/xampp/htdocs/akreditasi/resources/views/includes/footer.blade.php",
+		"/C/xampp/htdocs/menuasik/public/assets/js/angular/angular.min.js",
+		"/C/Users/notDayPC/Downloads/gkplugins-helper.user.js",
+		"/C/xampp/htdocs/menuasik/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/menuasik/database/migrations/2015_09_24_102228_create_tempatmakan_table.php",
 		"/C/xampp/htdocs/menuasik/app/Http/Controllers/Auth/AuthController.php",
 		"/C/xampp/htdocs/akreditasi/app/Http/Controllers/Auth/AuthController.php",
 		"/C/xampp/htdocs/menuasik/resources/views/page/login.blade.php",
@@ -267,10 +290,8 @@
 		"/C/xampp/htdocs/menuasik/app/Http/Requests/LoginRequest.php",
 		"/C/xampp/htdocs/akreditasi/app/Http/Requests/LoginRequest.php",
 		"/C/xampp/htdocs/menuasik/resources/assets/sass/app.scss",
-		"/C/xampp/htdocs/menuasik/database/migrations/2015_09_24_102228_create_tempatmakan_table.php",
 		"/C/xampp/htdocs/menuasik/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/C/xampp/htdocs/menuasik/app/TempatMakan.php",
-		"/C/xampp/htdocs/menuasik/database/seeds/DatabaseSeeder.php",
 		"/C/xampp/htdocs/menuasik/gulpfile.js",
 		"/C/xampp/htdocs/menuasik/config/app.php",
 		"/C/xampp/htdocs/menuasik/.env",
@@ -313,7 +334,6 @@
 		"/C/xampp/htdocs/rapor/app/controllers/LoginController.php",
 		"/C/xampp/htdocs/akreditasi/config/filesystems.php",
 		"/C/xampp/htdocs/akreditasi/resources/views/layouts/default.blade.php",
-		"/C/xampp/htdocs/akreditasi/resources/views/includes/footer.blade.php",
 		"/C/xampp/htdocs/rekapp/resources/views/pages/mahasiswa/mhsList.blade.php",
 		"/C/xampp/htdocs/akreditasi/app/Http/Requests/IsiDataRequest.php",
 		"/C/xampp/htdocs/akreditasi/vendor/laravel/framework/src/Illuminate/Pagination/BootstrapThreePresenter.php",
@@ -379,11 +399,7 @@
 		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/flight/layouts/partials/mobile/header.scala.html",
 		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/flight/layouts/partials/mobile/sidebar.scala.html",
 		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/web/layouts/partials/header.scala.html",
-		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/web/layouts/partials/footer.scala.html",
-		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/flight/pages/dummy/Mobile_blank.scala.html",
-		"/C/xampp/htdocs/HulaaWeb/src/main/webapp/resources/css/hulaa-mobile-1.0.0.css",
-		"/C/xampp/htdocs/HulaaWeb/src/main/webapp/resources/css/mobile/mobile-datepicker.css",
-		"/D/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/flight/pages/dummy/Mobileversion.scala.html"
+		"/C/xampp/htdocs/HulaaWeb/src/main/twirl/com/hulaa/web/layouts/partials/footer.scala.html"
 	],
 	"find":
 	{
@@ -391,7 +407,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"C:\\xampp\\htdocs\\menuasik",
@@ -410,6 +426,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rmKeunggulan",
 			"auth/login",
 			"class user",
 			"User",
@@ -536,8 +553,7 @@
 			"E-Ticket",
 			"E-Tiket",
 			"Selesai",
-			"Silakan isi data kartu kredit Anda sebagai berikut:",
-			"transfer.a"
+			"Silakan isi data kartu kredit Anda sebagai berikut:"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -556,7 +572,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -564,15 +580,15 @@
 					"file": "app/Http/routes.php",
 					"settings":
 					{
-						"buffer_size": 791,
+						"buffer_size": 929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6,
-								6
+								747,
+								757
 							]
 						],
 						"settings":
@@ -580,7 +596,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -590,15 +606,15 @@
 					"file": "resources/views/includes/header.blade.php",
 					"settings":
 					{
-						"buffer_size": 2391,
+						"buffer_size": 1589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								543,
-								543
+								35,
+								35
 							]
 						],
 						"settings":
@@ -615,6 +631,34 @@
 				},
 				{
 					"buffer": 2,
+					"file": "app/Http/Controllers/FoodController.php",
+					"settings":
+					{
+						"buffer_size": 2442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "app/Http/Controllers/AdminController.php",
 					"settings":
 					{
@@ -642,19 +686,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/views/page/admin/listAdmin.blade.php",
+					"buffer": 4,
+					"file": "resources/views/page/tempatmakan/listTempat.blade.php",
 					"settings":
 					{
-						"buffer_size": 646,
+						"buffer_size": 1540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								149,
+								149
 							]
 						],
 						"settings":
@@ -663,7 +707,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "resources/views/page/tempatmakan/tambahTempat.blade.php",
+					"settings":
+					{
+						"buffer_size": 3254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3165,
+								3165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 787.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -712,6 +783,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"head",
+				"menuasik/resources/views/includes/head.blade.php"
+			],
+			[
+				"footer",
+				"akreditasi/resources/views/includes/footer.blade.php"
+			],
 			[
 				"routes",
 				"akreditasi/app/Http/routes.php"
@@ -817,10 +896,6 @@
 				"rapor/vendor/filp/whoops/src/Whoops/Resources/views/layout.html.php"
 			],
 			[
-				"footer",
-				"akreditasi/resources/views/includes/footer.blade.php"
-			],
-			[
 				"bootstrappre",
 				"akreditasi/vendor/laravel/framework/src/Illuminate/Pagination/BootstrapThreePresenter.php"
 			],
@@ -867,10 +942,6 @@
 			[
 				"loginmodel",
 				"akreditasi/app/LoginModel.php"
-			],
-			[
-				"head",
-				"resources/views/includes/header.blade.php"
 			],
 			[
 				"configapp",
@@ -1095,6 +1166,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 215.0,
+	"side_bar_width": 195.0,
 	"status_bar_visible": true
 }

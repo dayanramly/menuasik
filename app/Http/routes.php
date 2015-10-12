@@ -19,6 +19,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/admin/list', 'AdminController@listAdmin');
 
     Route::get('/tempatmakan/list', 'FoodController@listMenu');
+    Route::get('/tempatmakan/tambah/data', 'FoodController@tambahData');
 });
 
 Route::get('login', 'Auth\AuthController@getLogin');
